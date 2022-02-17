@@ -1,6 +1,81 @@
 /* Root */
-*{
+* {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+/* Styles */
+
+header h1 {
+    text-align: center;
+    padding: 30px 0px 50px;
+    color: #2ca58d;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 50%;
+    height: 100vh;
+}
+
+.img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+input {
+    margin-left: 10px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+label,
+input {
+    font-size: 18px;
+}
+
+.form-container {
+    border: 2px solid #2ca58d;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.margin {
+    margin-top: 25px;
+}
+
+.parent-margin {
+    margin: 25px 0px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background-color: #363537;
+    color: white;
+    cursor: pointer;
+}
+
+.calculation h2 {
+    font-weight: 500;
+    margin: 5px 0px;
 }
