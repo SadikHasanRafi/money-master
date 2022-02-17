@@ -16,6 +16,7 @@ header h1 {
 
 main {
     display: flex;
+    border-top: 2px solid #2ca58d;
 }
 
 section {
@@ -64,18 +65,71 @@ input {
 }
 
 button {
-    width: 100%;
-    padding: 10px 0px;
+    padding: 10px 25px;
     font-size: 18px;
     border-radius: 8px;
     border: none;
     font-weight: 500;
     background-color: #363537;
+    border: 1px solid #363537;
     color: white;
     cursor: pointer;
+    transition: background 0.3s, color 0.3s;
 }
 
-.calculation h2 {
+.fullWidth {
+    width: 100%;
+    ;
+}
+
+button:hover {
+    background-color: white;
+    color: #363537;
+}
+
+.calculation h3 {
     font-weight: 500;
     margin: 5px 0px;
+}
+
+/* Resposive */
+@media screen and (max-width: 1354px) {
+    .main-section {
+        padding: 0px;
+    }
+
+    .form-container {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        flex-direction: column;
+        border: none;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    button {
+        border-radius: 0px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .fullWidthP {
+        visibility: hidden;
+    }
+
+    .main-section {
+        padding: 0px 20px;
+    }
+
+    form {
+        height: 100vh;
+    }
 }
