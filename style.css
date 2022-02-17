@@ -79,7 +79,6 @@ button {
 
 .fullWidth {
     width: 100%;
-    ;
 }
 
 button:hover {
@@ -99,7 +98,7 @@ button:hover {
     padding: 17px 25px;
     background-color: #363537;
     color: white;
-    display: none;
+    visibility: hidden;
 }
 
 /* Resposive */
