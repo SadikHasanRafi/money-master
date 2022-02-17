@@ -32,7 +32,7 @@
         <section>
             <img class="img" src="./Image/money.jpg" alt="" srcset="">
         </section>
-
+        
         <section class="main-section">
             <div class="form-container">
                 <form>
@@ -50,41 +50,44 @@
                     </div>
 
                     <div class="margin">
-                        <label for="income">Food:</label>
-                        <input id="income" type="text" placeholder="Food"><br>
+                        <label for="food">Food:</label>
+                        <input id="food" type="text" placeholder="Food"><br>
                     </div>
 
                     <div class="margin">
-                        <label for="income">Rent:</label>
-                        <input id="income" type="text" placeholder="Rent"><br>
+                        <label for="rent">Rent:</label>
+                        <input id="rent" type="text" placeholder="Rent"><br>
                     </div>
 
                     <div class="margin">
-                        <label for="income">Clothes:</label>
-                        <input id="income" type="text" placeholder="Clothes">
+                        <label for="cloth">Clothes:</label>
+                        <input id="cloth" type="text" placeholder="Clothes" >
                     </div>
 
-                    <button class="fullWidth margin">Calculate</button>
+                    <button type="button" class="fullWidth margin" id="calcBtn">Calculate</button>
 
                     <div class="parent-margin calculation">
-                        <h3>Total Expenses: <span> --</span></h3>
-                        <h3>Balance: <span> --</span></h3>
+                        <h3>Total Expenses: <span id="totalExpenses"> --</span></h3>
+                        <h3>Balance: <span id="balance"> --</span></h3>
                     </div>
 
                     <div class="margin">
                         <label for="save">Save:</label>
                         <input id="save" type="text" placeholder="Save">
-                        <button>Save</button>
+                        <button type="button" id="saveBtn">Save</button>
                     </div>
 
                     <div class="parent-margin calculation">
-                        <h3>Saving Amount: <span> --</span></h3>
-                        <h3>Remaining Balance: <span> --</span></h3>
+                        <h3>Saving Amount: <span id="saveAmount"> --</span></h3>
+                        <h3>Remaining Balance: <span id="RemainingBalance"> --</span></h3>
                     </div>
+
+                    <div class="textFieldError"></div>
 
                 </form>
             </div>
         </section>
+
     </main>
 
     <!-- Script link -->

@@ -92,6 +92,16 @@ button:hover {
     margin: 5px 0px;
 }
 
+.textFieldError{
+    position: absolute;
+    top: 250px;
+    right: 0px;
+    padding: 17px 25px;
+    background-color: #363537;
+    color: white;
+    display: none;
+}
+
 /* Resposive */
 @media screen and (max-width: 1354px) {
     .main-section {
